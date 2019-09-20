@@ -1,11 +1,17 @@
 //demonstration
 Returns a copy stamping floating point value.
 
+Retrives a stamping variable, usually from a downstream Copy Node.
+This fuction retrieves floating-point number value. For string value, use stamps.
+
 //form
 stamp(scope, token, value)
-scope: 
-token:
-value:
+
+scope: the path of the node to get the value from.
+token: the name of the variable to retrieve.
+value: the default value to use if token does not exist.
 
 //example
 stamp("../copy1", "variable", 0)
+stamp("../copy1", "sides", 5)
+stamp("..", "fuzzy", 0.5)
