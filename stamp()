@@ -1,0 +1,11 @@
+//demonstration
+Returns a copy stamping floating point value.
+
+//form
+stamp(scope, token, value)
+scope: 
+token:
+value:
+
+//example
+stamp("../copy1", "variable", 0)
